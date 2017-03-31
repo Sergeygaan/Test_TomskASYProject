@@ -34,7 +34,7 @@ namespace WorkFiles
                         {
                             MyStream.Close();
                            FileStream stream = new FileStream(OpenFileDialog1.FileName, FileMode.Open);
-                           StreamReader reader = new StreamReader(stream);
+                           StreamReader reader = new StreamReader(stream, Encoding.Default);
                             _stringLoad = reader.ReadToEnd();
                            stream.Close();
                         }
