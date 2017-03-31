@@ -67,6 +67,8 @@ namespace WorkFiles
                     MyStream.Close();
    
                     File.WriteAllText(SaveFileDialog1.FileName, WriteString, Encoding.UTF8);
+
+                    MessageBox.Show("Данные успешно записанны в файл");
                 }
             }
         }
